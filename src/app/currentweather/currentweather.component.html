@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+  </head>
+  <body>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<form role="form"   [formGroup]="formdata" (ngSubmit)="getdata(formdata.value)" > <br><br>
+				<div class="form-group">
+					 
+		
+					<input type="text" class="form-control" id="exampleInputEmail1"  formControlName="city" placeholder="Enter city name">
+				</div>
+				<button type="submit" class="btn btn-primary">
+					Submit
+				</button>
+			</form>
+		</div>
+	</div><br>
+	<div class="alert alert-info" role="alert" *ngIf="yes1">
+		Enter your city name and submit button to get the data!
+	  </div>
+
+	  <div class="alert alert-danger" role="alert" *ngIf="yes2">
+		Sorry we can't find any city with this name !
+	  </div>
+
+	  <div class="main">
+		  <div class="pune"><h3 class="h3">PUNE</h3> <br>
+			<div >
+			  temp:{{punetmp | number:'0.0'}} °C   
+		  <br>
+			  max temp:{{punemax | number:'0.0'}}°C<br>
+			  min temp:{{punemin | number:'0.0'}}°C<br>
+			<!-- <img src={{image}} alt=""> -->
+			</div>
+		  </div>
+		  <div class="mumbai"><h3 class="h3">MUMBAI</h3><br>
+			<div>
+			temp:{{mumtmp | number:'0.0'}}°C <br>
+			max temp:{{mummax | number:'0.0'}}°C <br>
+			min temp:{{mummin  | number:'0.0'}}°C <br></div>
+		  </div>
+		  <div class="chennai"><h3 class="h3">CHENNAI</h3><br><div>
+			temp:{{chenntmp  | number:'0.0'}}°C  <br>
+			max temp:{{chennmax | number:'0.0'}}°C <br>
+			min temp:{{chennmin | number:'0.0'}}°C <br></div>
+		  </div>
+		  <div class="delhi"><h3 class="h3">DELHI</h3> <br><div>
+			temp:{{deltmp | number:'0.0'}}°C  <br>
+			max temp:{{delmax | number:'0.0'}}°C <br>
+			min temp:{{delmin | number:'0.0'}}°C <br></div>
+		  </div>
+		  <div class="bangalore"><h3 >BANGALORE</h3> <br><div>
+			temp:{{bangtmp | number:'0.0'}}°C  <br>
+			max temp:{{bangmax | number:'0.0'}}°C <br>
+			min temp:{{bangmin| number:'0.0'}}°C <br></div>
+		  </div>
+	  </div>
+	<div class="row" *ngIf="yes">
+		<div class="col-md-12">			
+			<div class="jumbotron" style="background-color: #bcc2c5;">
+				<h2>
+					Temperature
+				</h2>
+				<p style="font-size: 30px;">
+					{{temp  | number:'0.0'}} °C   
+				</p>	
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="https://gumlet.assettype.com/deshdoot/import/2020/03/heat_hot_weather_shutterstock_80404600-1493386752-8842.jpg?w=1200&h=750&auto=format%2Ccompress&fit=max"  style="height: 200px;">
+						<div class="card-block">
+							<h5 class="card-title">
+								Max Temperature
+							</h5>
+							<p class="card-text">
+								{{tempmax  | number:'0.0'}}°C
+							</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="https://media.istockphoto.com/photos/thermometer-on-snow-shows-low-temperatures-zero-low-temperatures-in-picture-id868098786?k=20&m=868098786&s=612x612&w=0&h=6mq5iFO_ITp8kVmL5p0l-XnQOYwBZEYJK1iUXYPqmPo=" style="height: 200px;">
+						<div class="card-block">
+							<h5 class="card-title">
+								Min Temperature
+							</h5>
+							<p class="card-text">
+								{{tempmin  | number:'0.0'}}°C
+							</p>							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="https://cdn.images.express.co.uk/img/dynamic/130/750x445/1319823.jpg" style="height: 200px;" >
+						<div class="card-block">
+							<h5 class="card-title">
+								Feelslike Temperature
+							</h5>
+							<p class="card-text">
+								{{feelslike  | number:'0.0'}}°C
+							</p>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
