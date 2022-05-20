@@ -8,6 +8,18 @@
         width: 10px;
     }
 }
+@media (max-width:500px){
+    .size{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .data{
+        font-size: 98%;
+        text-align: center;
+    }
+}
 
 
 

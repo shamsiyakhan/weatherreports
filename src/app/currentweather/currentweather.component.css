@@ -2,6 +2,7 @@
 
     width: 100%;
     display: flex;
+
     gap:10%;
     height:30vh;
     color: rgb(12, 12, 12);
@@ -9,9 +10,13 @@
     font-family:'Times New Roman', Times, serif;
     font-size: 90%;
 }
-@media screen and(max-width:550px){
+@media (max-width:900px){
     html{
         font-size: 3px;
+
+    }
+    .main{
+        display: none;
     }
 }
 

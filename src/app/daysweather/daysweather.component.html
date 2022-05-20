@@ -85,6 +85,16 @@
 			</table>
 		</div>
 	</div>
+<div class="align">
+<div class="show" *ngFor="let a of date1">
+	<p>DATE:   	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;		 {{a["dt_txt"] | date:"dd/MM/yyyy"}}</p>
+	<p>TIME:  	&nbsp; &nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;		&nbsp;	&nbsp;	&nbsp;	&nbsp;	 {{a["dt_txt"] | date:"hh:mm"}}</p>
+	<p>TEMPERATURE:	&nbsp;		&nbsp;	&nbsp;		&nbsp;	&nbsp;	{{a["main"].temp -273.15 | number:'0.0'}}°C</p>
+	<p>MAX TEMPERATURE:	&nbsp;	&nbsp;			{{a["main"].temp_max -273.15 | number:'0.0'}}°C</p>
+	<p>MIN TEMPERATURE:		&nbsp;	&nbsp;		{{a["main"].temp_min -273.15 | number:'1.1'}}°C</p>
+</div>
+</div>
+
 	<div class="row">
 		<div class="col-md-12">
 		</div>

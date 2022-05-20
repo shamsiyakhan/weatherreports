@@ -5,3 +5,33 @@
     padding: 50px;
 
 }
+@media (max-width:450px){
+    .mb-3{
+        width:98%;
+       
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:400px){
+    .mb-3{
+        width:120%;
+       
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:350px){
+    .mb-3{
+        width:130%;
+       
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
